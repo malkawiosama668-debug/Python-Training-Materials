@@ -1,0 +1,15 @@
+# Environments
+env/
+venv/
+*.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# IDEs
+.vscode/
+.idea/
+
+# Data sets (optional, if you want them to download data dynamically later)
+*.log
