@@ -67,6 +67,7 @@ clean_text = text.strip()              # Removes leading/trailing whitespace
 shouted = text.upper()                 # Converts to " PYTHON TRAINING "
 word_list = clean_text.split(" ")      # Splits into a list: ['Python', 'Training']
 replaced = clean_text.replace("P", "C")# "Cython Training"
+joined_text = "-".join(word_list)      # Joins list into a single string: "Python-Training"
 ```
 
 **Why use each data type and data structure?**
