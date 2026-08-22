@@ -15,7 +15,7 @@ Welcome to the first module of the Python Training Program. This section covers 
 
 ## Hands-On Practice Tasks
 
-To master these concepts, complete the following three tasks. Navigate to the respective sub-directories to write and test your code.
+To master these concepts, complete the following four tasks. Navigate to the respective sub-directories to write and test your code.
 
 ### Task 1.1: Build a Dynamic "User Profile" Generator
 
@@ -23,33 +23,80 @@ To master these concepts, complete the following three tasks. Navigate to the re
 
 Create a script that prompts the user for information and prints a formatted summary profile.
 
+* **Where to write your code:** Navigate to the **[task_1_1_user_profile](./Tasks/task_1_1_user_profile/)** directory and write your solution inside the `user_profile.py` file.
 * **Input Requirements:** Name (String), Age (Integer), Weight (Float), Employment Status (Boolean: Y/N).
 * **Processing:** * Store input in correctly typed variables.
   * Convert the 'employed' input ('Y'/'N') into a Boolean (`True` / `False`).
   * Calculate BMI using a placeholder height (e.g., 1.75m).
 * **Output:** Print a well-formatted summary using f-strings, clearly labeling all gathered and calculated data.
 
+**How to test your code:**
+Once you have written your solution, you can verify its logic using the provided automated test script. Open your terminal, ensure you are in the correct directory, and run the following commands:
+
+```bash
+cd task_1_user_profile
+python test_user_profile.py
+```
+
 ---
 
-### Task 1.2: Develop a Comprehensive "Logic Gate Simulator"
+### Task 1.2: The String Surgeon
+
+**Objective:** Master string immutability, slicing `[start:stop:step]`, and built-in string methods (`strip`, `upper`, `replace`, `split`).
+
+You have intercepted a messy, unformatted log entry from a legacy database. Your task is to clean and extract the relevant information using Python's string operations.
+
+* **Where to write your code:** Navigate to the **[task_1_2_string_surgeon](./task_1_2_string_surgeon/)** directory and write your solution inside the `string_surgeon.py` file.
+* **Target String:**
+  `log_entry = "   ERROR-CODE: 404 - file_not_found - admin_node_7   "`
+* **Processing Steps:**
+  1. **Clean:** Remove the leading and trailing whitespace.
+  2. **Standardize:** Convert the entire cleaned string to uppercase.
+  3. **Replace:** Replace all hyphens (`-`) with underscores (`_`).
+  4. **Extract:** Slice the string to extract only the error number (`404`). Store this in a new variable.
+  5. **Split:** Split the fully cleaned/replaced string into a list of words using the spaces as the delimiter.
+* **Output Requirements:** Print the result of each step one by one so you can visually verify how the string transforms through the pipeline.
+
+**How to test your code:**
+Once you have written your solution, you can verify its logic using the automated test script located in the **[task_1_2_string_surgeon](./task_1_2_string_surgeon/)** folder. Open your terminal, ensure you are in the correct directory, and run the following commands:
+
+```bash
+cd task_1_2_string_surgeon
+python test_string_surgeon.py
+```
+
+---
+
+### Task 1.3: Develop a Comprehensive "Logic Gate Simulator"
 
 **Objective:** Master `if`, `elif`, and `else` statements, and implement logical operators (`and`, `or`, `not`) and nested conditions.
 
 Create a program that simulates fundamental logic gates (AND, OR, NOT, XOR).
 
+* **Where to write your code:** Navigate to the **[task_1_3_logic_gate](./task_1_3_logic_gate/)** directory and write your solution inside the `logic_gate.py` file.
 * **Input:** Two boolean inputs (A and B, accepted as `True`/`False` or `1`/`0`).
-* **Requirements:** * Implement checks for AND, OR, and NOT gates.
-  * Implement an XOR gate using nested logic or combined operators (XOR is True only if A and B differ).
+* **Requirements:**
+  * Implement checks for AND, OR, and NOT gates.
+  * Implement an XOR gate using nested logic or combined operators (XOR is True only if A and B differ)
 * **User Interaction:** Prompt the user to select a gate to test, take the necessary inputs, and print the resulting output.
+
+**How to test your code:**
+Once your solution is ready, verify its logic using the automated test script located in the **[task_1_3_logic_gate](./task_1_3_logic_gate/)** folder. Open your terminal, ensure you are in the correct directory, and run:
+
+```bash
+cd task_1_3_logic_gate
+python test_logic_gate.py
+```
 
 ---
 
-### Task 1.3: Create an Automated "Password Strength Validator"
+### Task 1.4: Create an Automated "Password Strength Validator"
 
 **Objective:** Practice using `for` and `while` loops, `break` and `continue` keywords, and iterating over strings.
 
 Write a script that checks a user-provided password against complex rules. Use a `while` loop to keep prompting the user until a valid password is provided.
 
+* **Where to write your code:** Navigate to the **[task_1_4_password_validator](./task_1_4_password_validator/)** directory and write your solution inside the `password_validator.py` file.
 * **Rules:** The password must meet all the following criteria:
   * Minimum length of 8 characters.
   * Contains at least one Uppercase letter.
@@ -57,3 +104,11 @@ Write a script that checks a user-provided password against complex rules. Use a
   * Contains at least one Digit.
   * Contains at least one Special Character (!@#$%^&).
 * **Processing:** Use a `for` loop to iterate through the characters of the password and count rule fulfillment. Provide specific feedback to the user on which rules failed. Use the `break` keyword only when all conditions are met successfully.
+
+**How to test your code:**
+Once your solution is ready, verify its logic using the automated test script located in the **[task_1_4_password_validator](./task_1_4_password_validator/)** folder. Open your terminal, ensure you are in the correct directory, and run:
+
+```bash
+cd task_1_4_password_validator
+python test_password_validator.py
+```
